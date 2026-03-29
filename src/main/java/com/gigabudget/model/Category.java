@@ -17,6 +17,12 @@ public class Category {
         this.type = type;
     }
 
+    public Category(Long userId, String name, TransactionType type) {
+        this.userId = userId;
+        this.name = name;
+        this.type = type;
+    }
+
     public Long getId() {
         return id;
     }

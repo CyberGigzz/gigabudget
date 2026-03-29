@@ -21,6 +21,13 @@ public class Account {
         this.balance = balance;
     }
 
+    public Account(Long userId, String name, AccountType type) {
+        this.userId = userId;
+        this.name = name;
+        this.type = type;
+    }
+
+
     public Long getId() {
         return id;
     }

@@ -32,6 +32,17 @@ public class Transaction {
         this.createdAt = createdAt;
     }
 
+    public Transaction(Long userId, Long accountId, Long categoryId, BigDecimal amount,
+                       TransactionType type, String description, LocalDateTime transactionDate) {
+        this.userId = userId;
+        this.accountId = accountId;
+        this.categoryId = categoryId;
+        this.amount = amount;
+        this.type = type;
+        this.description = description;
+        this.transactionDate = transactionDate;
+    }
+
     public Long getId() {
         return id;
     }
